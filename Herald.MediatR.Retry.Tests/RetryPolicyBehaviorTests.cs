@@ -1,7 +1,4 @@
-﻿using Activities.Application.Infrastructure.RetryPolicy;
-using Activities.Infrastructure;
-
-using MediatR;
+﻿using MediatR;
 
 using Microsoft.Extensions.DependencyInjection;
 

@@ -1,5 +1,3 @@
-using Activities.Application.Infrastructure.RetryPolicy;
-
 using System;
 
 using Xunit;
