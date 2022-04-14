@@ -1,6 +1,6 @@
 # Herald.MediatR.Retry
 
-![Status](https://github.com/tcfialho/Herald.MediatR.Retry/workflows/Herald.MediatR.Retry/badge.svg) ![Coverage](https://codecov.io/gh/tcfialho/Herald.MediatR.Retry/branch/master/graph/badge.svg) ![NuGet](https://buildstats.info/nuget/Herald.MediatR.Retry)
+![Status](https://github.com/tcfialho/Herald.MediatR.Retry/workflows/Master/badge.svg) ![Coverage](https://codecov.io/gh/tcfialho/Herald.MediatR.Retry/branch/master/graph/badge.svg) ![NuGet](https://buildstats.info/nuget/Herald.MediatR.Retry)
 
 ## Overview
  - Applies a retry policy on the MediatR request.
