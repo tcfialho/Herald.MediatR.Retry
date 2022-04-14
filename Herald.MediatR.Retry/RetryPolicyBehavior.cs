@@ -1,6 +1,4 @@
-﻿using Activities.Application.Infrastructure.RetryPolicy;
-
-using MediatR;
+﻿using MediatR;
 
 using Microsoft.Extensions.Logging;
 
@@ -11,7 +9,7 @@ using System.Reflection;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Activities.Infrastructure
+namespace Herald.MediatR.Retry
 {
     public class RetryPolicyBehavior<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse> where TRequest : IRequest<TResponse>
     {

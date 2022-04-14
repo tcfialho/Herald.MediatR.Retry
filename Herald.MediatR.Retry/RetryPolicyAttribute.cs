@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Activities.Application.Infrastructure.RetryPolicy
+namespace Herald.MediatR.Retry
 {
     /// <summary>
     /// Applies a retry policy on the MediatR request.
