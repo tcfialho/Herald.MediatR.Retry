@@ -34,7 +34,7 @@ namespace Herald.MediatR.Retry.Tests
             var services = new ServiceCollection();
 
             services.AddLogging();
-            services.AddTransient(typeof(IPipelineBehavior<,>), typeof(RetryPolicyBehavior<,>));
+            services.AddRetryPolictyBehavior();
             services.AddMediatR(Assembly.GetExecutingAssembly());
 
             var mediator = services.BuildServiceProvider().GetService<IMediator>();
@@ -44,7 +44,7 @@ namespace Herald.MediatR.Retry.Tests
             Func<Task> act = () => mediator.Send(cmd);
 
             //Assert
-            Assert.ThrowsAsync<ApplicationException>(act);
+            await Assert.ThrowsAsync<ApplicationException>(act);
         }
     }
 }
